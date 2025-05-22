@@ -152,6 +152,11 @@ This paper introduces MCTrack, a new 3D multi-object tracking method that achiev
     ```
     $ python preprocess/convert2baseversion.py --dataset kitti/nuscenes/waymo
     ```
+
+- Alternatively, you can download our prepared BaseVersion data automatically:
+```bash
+$ python scripts/download_baseversion.py
+```
 - Eventually, you will get the data format of baseversion in the path `data/base_version/`.
     ```
     data/
