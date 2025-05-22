@@ -358,3 +358,22 @@ If you find this work useful, please consider to cite our paper:
   year={2024}
 }
 ```
+
+## 8. Extended Features
+
+The repository now includes several advanced modules that explore cross-modal tracking:
+
+- **3D–2D Feature Consistency Learning**: a contrastive module (`FeatureAlignment`) aligns LiDAR and RGB representations in a unified space, improving cross-modal discrimination.
+- **Implicit Object Representation**: an implicit neural field (`ImplicitObject`) maintains target features during long-term occlusion for robust re-identification.
+- **Graph-based Multi-frame Association**: a light Graph Neural Network (`MultiFrameGNN`) aggregates temporal cues across frames for global association.
+- **End-to-End Transformer Tracking**: `CrossModalTracker` integrates feature fusion and association within a Transformer encoder to jointly optimize the full tracking pipeline.
+
+To run a basic demonstration of these modules on the KITTI dataset with both LiDAR and RGB inputs, first convert the detections to the BaseVersion format as described above. Then execute:
+
+```bash
+python cross_modal_demo.py \
+    --dataset_root data/kitti/datasets \
+    --detections_json data/base_version/kitti/virconv/val.json
+```
+
+This script loads each frame's image and point cloud, aligns the features and processes them with the transformer-based tracker.
