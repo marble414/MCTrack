@@ -239,7 +239,7 @@ $ pip install -r requirements.txt
 
 ### Dataset configuration
 #### nuScenes and KITTI 
-- For KITTI and nuScenes, you can run `MCTrack` directly after installing the required packages as mentioned above.
+- For KITTI and nuScenes, you can run `MCTrack` directly after installing the required packages as mentioned above. If you need to test with your own nuScenes LiDAR and RGB detections, see [docs/nuscenes_integration.md](docs/nuscenes_integration.md) for setup and running instructions.
 
 #### Waymo
 
