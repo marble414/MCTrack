@@ -346,9 +346,13 @@ $ pip install -r requirements.txt
   - [Poly-MOT](https://github.com/lixiaoyu2000/Poly-MOT)
 
   - [ImmortalTracker](https://github.com/esdolo/ImmortalTracker)
+
+## 7. Innovative Modules
+This repository provides experimental implementations of future MCTrack modules in the `innovations` package, including hierarchical feature alignment and heterogeneous graph modeling.
+
     
 
-## 7. Citation
+## 8. Citation
 If you find this work useful, please consider to cite our paper:
 ```
 @article{wang2024mctrack,
